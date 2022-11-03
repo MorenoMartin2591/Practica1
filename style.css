@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Rye-fonts";
+  src: url(/Fuentes-colores/Rye-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Navbar";
+  src: url(Fuentes-colores/Shojumaru-Regular.ttf);
+}
+
+html {
+  /* 16px => 10px */
+  /* 10px = 1rem*/
+  font-size: 62.5%;
+}
+
+body {
+  /* 1.6rem = 16px*/
+  font-size: 1.5rem;
+}
+
+.Titulo-main {
+  display: flow-root;
+  font-size: 5rem;
+  text-align: center;
+  background-color: #0062ff;
+  font-family: "Navbar";
+  color: rgb(177, 122, 122);
+  border: solid 0.5rem black;
+}
+
+.main-body {
+  width: 100vw;
+  display: flex;
+  position: absolute;
+}
+
+.dropdown-item {
+  font-size: 2.5rem;
+}
+
+.nav-item {
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+}
+.nav-img {
+  width: 6rem;
+  border-radius: 50%;
+}
+
+#navbarDropdown {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-right: 1.5rem;
+  color: rgb(177, 122, 122);
+  font-family: "Rye-fonts";
+}
+
+.main-body_carousel {
+  width: 35rem;
+  height: 75rem;
+  position: absolute;
+  margin-top: 45rem;
+  margin-left: 80rem;
+}
