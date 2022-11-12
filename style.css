@@ -4,11 +4,12 @@ body {
     /* background-attachment: fixed; */
 }
 .contenedor {
-    background-image: url(./img/body-img.jpg);
+    background-image: url(./img/body-img2.png);
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center center;
     height: 100vh;
+    
 }
 .navcolor {
     background: #0F2027;  /* fllback for old browsers */
@@ -35,6 +36,7 @@ body {
     justify-content: space-around;
     align-content: space-around;
     height: 70%; 
+    margin: 0 auto;
 }
 
 
@@ -46,4 +48,10 @@ img {
     border-radius: 10px;
     backdrop-filter: blur(10px);
     color: #fff;
+}
+@media (max-width: 768px) {
+    .contenedor {
+        background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+        
 }
