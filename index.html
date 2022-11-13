@@ -20,10 +20,9 @@
   </head>
   <body>
     <div class="col-sm-12 contenedor">
-      <nav class="navbar navbar-expand-md navbar-dark navcolor">
+      <nav class="navbar navbar-expand-md navbar-dark navcolor w-100">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <!-- <i class="bi bi-film"></i> -->
             <img src="./img/logo-pagina-video1.png" alt="" />
             <span class="text-warning">Cinema</span>
           </a>
@@ -103,90 +102,154 @@
           </div>
         </div>
       </nav>
-      <div class="col-sm-12 row contenedor-carousel 100vh">
-        <div
-          id="mi-carousel"
-          class="col-sm-12 col-md-9 col-lg-6 carousel slide carrusel"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
+      <div class="row seccion-carousel">
+        <div class="col-sm-12 contenedor-carousel">
+          <div
+            id="mi-carousel"
+            class="col-sm-12 col-md-9 col-lg-6 carousel slide carrusel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active imagen">
+                <img
+                  src="./img/edit1.jpg"
+                  class="d-block w-100 m-auto"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
+                  <p>No importa la cantidad de dispositivos conectados</p>
+                </div>
+              </div>
+              <div class="carousel-item imagen">
+                <img
+                  src="./img/edit2.jpg"
+                  class="d-block w-100 m-auto"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Terror - Crimen - Suspenso - Thriller</h5>
+                  <p>Puedes elegir la edad para visualizar el contenido</p>
+                </div>
+              </div>
+              <div class="carousel-item imagen">
+                <img
+                  src="./img/estrenos-3.jpg"
+                  class="d-block w-100 m-auto"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Encontrá los mejores contenidos</h5>
+                  <p>
+                    Todas las series y peliculas estrenos losp uedes ver a
+                    través de 5mentario
+                  </p>
+                </div>
+              </div>
+            </div>
             <button
+              class="carousel-control-prev"
               type="button"
               data-bs-target="#mi-carousel"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
             <button
+              class="carousel-control-next"
               type="button"
               data-bs-target="#mi-carousel"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#mi-carousel"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active imagen">
+        </div>
+      </div>
+      <div class="row seccion-planes">
+        <div class="col-sm-12 contenedor-planes">
+          <div class="contendor-titulo text-center">
+            <h2 class="title2 text-warning mt-2">Elegí tu plan</h2>
+          </div>
+          <div
+            class="contenedor-cards d-md-flex flex-wrap justify-content-evenly"
+          >
+            <div class="card col-sm-8 col-md-3">
               <img
-                src="./img/edit1.jpg"
-                class="d-block w-100 m-auto"
+                src="./img/palomitas-maiz4.png"
+                class="card-img-top imangen-card"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
-                <p>No importa la cantidad de dispositivos conectados</p>
-              </div>
-            </div>
-            <div class="carousel-item imagen">
-              <img
-                src="./img/edit2.jpg"
-                class="d-block w-100 m-auto"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Terror - Crimen - Suspenso - Thriller</h5>
-                <p>Puedes elegir la edad para visualizar el contenido</p>
-              </div>
-            </div>
-            <div class="carousel-item imagen">
-              <img
-                src="./img/estrenos-3.jpg"
-                class="d-block w-100 m-auto"
-                alt="..."
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Encontrá los mejores contenidos</h5>
-                <p>
-                  Todas las series y peliculas estrenos losp uedes ver a través
-                  de 5mentario
+              <div class="card-body text-white">
+                <h5 class="card-title pb-3">Plan básico</h5>
+                <p class="card-text pb-3">
+                  ARS 385/mes (final)* En Disney+ vas a encontrar los últimos
+                  estrenos del cine, originales y clásicos inolvidables.
                 </p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+              </div>
+            </div>
+            <div class="card col-sm-8 col-md-3">
+              <img
+                src="./img/palomitas-maiz3.jpg.png"
+                class="card-img-top imangen-card"
+                alt="..."
+              />
+              <div class="card-body text-white">
+                <h5 class="card-title pb-3">Plan Home</h5>
+                <p class="card-text pb-3">
+                  ARS 995/mes (final)* Contratá Disney+ y Star+ juntos. Ahorrá y
+                  disfrutá ahora los dos servicios por un precio único.
+                </p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+              </div>
+            </div>
+            <div class="card col-sm-8 col-md-3">
+              <img
+                src="./img/palomitas-maiz2.png"
+                class="card-img-top imangen-card"
+                alt="..."
+              />
+              <div class="card-body text-white">
+                <h5 class="card-title pb-3">Plan Full</h5>
+                <p class="card-text pb-3">
+                  ARS 1.150/mes (final)* Disney+, Star+ y STARZPLAY en un único
+                  plan. Comprá ahora los tres servicios juntos.
+                </p>
+                <a href="#" class="btn btn-primary">Ir a algún lugar</a>
               </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#mi-carousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#mi-carousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
         </div>
       </div>
     </div>

@@ -1,12 +1,11 @@
 
 body {
-    background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* background-attachment: fixed; */
+    background: #034AA6;
 }
 .contenedor {
     background-image: url(./img/body-img2.png);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100%;
     background-position: center center;
     height: 100vh;
     
@@ -15,8 +14,8 @@ body {
     background: #0F2027;  /* fllback for old browsers */
     background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    position: fixed;
+    z-index: 2;
 }
 .navbar-brand img {
     width: 100px;
@@ -35,13 +34,13 @@ body {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
-    height: 70%; 
-    margin: 0 auto;
+    height: 100%; 
+    margin: 7% auto;
+    
 }
-
-
-img {
-    border-radius: 5px;
+.carousel-inner {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(255,255,255,.8);
 }
 .carousel-caption {
     background: rgba(0,0,0,0.5);
@@ -49,9 +48,34 @@ img {
     backdrop-filter: blur(10px);
     color: #fff;
 }
+.seccion-planes {
+    margin: 7% auto 10%;
+    width: 100vw;
+    height: 100vh;
+}
+/*   */
+.card {
+    background: none;
+    box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1);
+    text-align: center;
+    align-items: center;
+    margin: 2rem auto;
+    
+}
+.imangen-card {
+    width: 50%;
+    padding: 2rem 0 5rem 0;
+}
+.card-title {
+    font-size: 2rem;
+}
 @media (max-width: 768px) {
     .contenedor {
         background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-        
+    /* .seccion-planes {
+        margin: 10% auto;
+        width: 100vw;
+        height: 100vh;
+    } */
 }
