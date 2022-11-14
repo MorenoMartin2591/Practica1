@@ -1,4 +1,3 @@
-
 body {
     background: #034AA6;
 }
@@ -11,6 +10,7 @@ body {
     
 }
 .navcolor {
+    font-family: 'Oswald';
     background: #0F2027;  /* fllback for old browsers */
     background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -53,6 +53,11 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.title2 {
+    font-size: 3rem;
+    font-family: 'Rye';
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+}
 /*   */
 .card {
     background: none;
@@ -64,7 +69,7 @@ body {
 }
 .imangen-card {
     width: 50%;
-    padding: 2rem 0 5rem 0;
+    padding: 1rem 0 1rem 0;
 }
 .card-title {
     font-size: 2rem;
@@ -73,9 +78,11 @@ body {
     .contenedor {
         background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     }
-    /* .seccion-planes {
-        margin: 10% auto;
-        width: 100vw;
-        height: 100vh;
-    } */
+    .contenedor-carousel {
+        margin: 12% auto;        
+    }
+    .carousel-inner {
+        border-radius: 0;
+        box-shadow: 0 0 5px rgba(0,0,0,.8);
+    }
 }
