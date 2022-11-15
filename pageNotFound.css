@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59);
+  
+}
+.imagen {
+    margin: 0 auto;
+    padding: 3em;
+}
+.title5 {
+    font-size: 2rem;
+}
+.btn {
+    border-radius: 25px;
+}
