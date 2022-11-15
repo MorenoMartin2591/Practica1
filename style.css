@@ -1,6 +1,15 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   /* background-attachment: fixed; */
 }
 .contenedor {
@@ -11,18 +20,25 @@ body {
   height: 100vh;
 }
 .navcolor {
-  background: #0F2027;  /* fllback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  background: #0f2027; /* fllback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navbar-brand img {
   width: 100px;
 }
 .iBuscar {
   border-radius: 25px 0 0 25px;
-  
 }
 .botonB {
   border-radius: 0 25px 25px 0;
@@ -34,15 +50,14 @@ body {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
-  height: 70%; 
+  height: 70%;
 }
-
 
 img {
   border-radius: 5px;
 }
 .carousel-caption {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   backdrop-filter: blur(10px);
   color: #fff;
