@@ -15,10 +15,10 @@ body {
 }
 .contenedor {
   background-image: url(./img/body-img2.png);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: center center;
+  background-size: cover;
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .navcolor {
   background: #0f2027; /* fllback for old browsers */
@@ -52,11 +52,11 @@ body {
   justify-content: space-around;
   align-content: space-around;
   height: 70%;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 img {
-  border-radius: 5px;
+  border-radius: 3rem;
 }
 .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
@@ -66,5 +66,10 @@ img {
 }
 
 section {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+img:hover {
+  transform: scale(1.075);
+  transition-duration: 1s;
 }
