@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background: linear-gradient(
     to bottom,
@@ -51,6 +52,7 @@ body {
   justify-content: space-around;
   align-content: space-around;
   height: 70%;
+  padding-top: 15%;
 }
 
 img {
