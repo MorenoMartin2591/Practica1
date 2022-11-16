@@ -5,20 +5,13 @@
 }
 
 body {
-  background: linear-gradient(
-    to bottom,
-    #076df2,
-    #034aa6,
-    #021f59
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* background-attachment: fixed; */
-}
-.contenedor {
   background-image: url(./img/body-img2.png);
-  background-size: cover;
   height: 100vh;
-  background-position: center;
+  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 .navcolor {
   background: #0f2027; /* fllback for old browsers */
@@ -66,7 +59,7 @@ img {
 }
 
 section {
-  padding-top: 1rem;
+  padding-top: 10rem;
 }
 
 img:hover {
