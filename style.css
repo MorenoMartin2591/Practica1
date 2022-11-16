@@ -52,7 +52,7 @@ body {
   justify-content: space-around;
   align-content: space-around;
   height: 70%;
-  padding-top: 15%;
+  padding-top: 10rem;
 }
 
 img {
@@ -63,4 +63,8 @@ img {
   border-radius: 10px;
   backdrop-filter: blur(10px);
   color: #fff;
+}
+
+section {
+  padding-top: 0.5rem;
 }
