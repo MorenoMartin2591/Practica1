@@ -3,12 +3,29 @@ body {
     background-repeat: no-repeat;
     background-size: 100vw;
 }
+.navcolor {
+    font-family: 'Oswald';
+
+}
+.navbar-brand img {
+    width: 100px;
+}
+.iBuscar {
+    border-radius: 25px 0 0 25px;
+    
+}
+.botonC {
+    border-radius: 0 25px 25px 0;
+}
+.boton {
+    border-radius: 25px;
+}
 .container {
     width: 60%;
     background: rgba(0,0,0,.6);
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    margin: 6% auto;
+    margin: 2% auto;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -29,7 +46,7 @@ body {
 .form-control {
     background-color: rgba(0,0,0,.8)
 }
-.btn {
+.btn-lg {
     border-radius: 25px;
 }
 @media (max-width: 1024px) {

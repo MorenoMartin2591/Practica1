@@ -22,6 +22,94 @@
     />
   </head>
   <body>
+    <header class="row justify-content-center">
+      <nav
+        class="navbar navbar-expand-md bg-dark bg-gradient navbar-dark navcolor w-100"
+      >
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="./img/logo-pagina-video1.png" alt="" />
+            <span class="text-warning">Cinema</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto">
+              <li class="navbar-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#">Estrenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#">Comedia</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ciencia Ficción</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Drama</a></li>
+                  <li><a class="dropdown-item" href="#">Familia</a></li>
+                  <li><a class="dropdown-item" href="#">Misterio</a></li>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link active" href="./formulario.html">Contacto</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="./about.html">Acerca de</a>
+              </li>
+            </ul>
+            <hr class="text-white" />
+            <form
+              class="col-xl-3 col-sm-6 d-flex justify-content-lg-center"
+              role="search"
+            >
+              <input
+                class="form-control iBuscar"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-light botonC" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <hr class="text-white" />
+            <form
+              class="d-flex justify-content-end justify-content-sm-start ms-lg-2"
+            >
+              <button class="btn btn-light me-2 boton" type="button">
+                Login
+              </button>
+              <button class="btn btn-outline-warning boton" type="button">
+                Suscribirse
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div class="container">
       <form class="container-form">
         <div class="contenedor-form">
