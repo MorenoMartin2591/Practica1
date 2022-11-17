@@ -76,13 +76,7 @@ img:hover {
 body {
   background: #034aa6;
 }
-.contenedor {
-  background-image: url(./img/body-img2.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  height: 100vh;
-}
+
 .navcolor {
   font-family: "Oswald";
   background: #0f2027; /* fllback for old browsers */
@@ -120,7 +114,14 @@ body {
     height: 100%; 
     margin: 7% auto;
     
-} */
+} 
+.contenedor {
+  background-image: url(./img/body-img2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  height: 100vh;}*/
+
 .carousel-inner {
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
