@@ -14,7 +14,7 @@ body {
     background: #0F2027;  /* fllback for old browsers */
     background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    position: fixed;
+    /* position: fixed; */
     z-index: 2;
 }
 .navbar-brand img {
@@ -30,16 +30,16 @@ body {
 .boton {
     border-radius: 25px;
 }
-.contenedor-carousel {
+/* .contenedor-carousel {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
     height: 100%; 
     margin: 7% auto;
     
-}
+} */
 .carousel-inner {
-    border-radius: 10px;
+    border-radius: 4px;
     box-shadow: 0 0 5px rgba(255,255,255,.8);
 }
 .carousel-caption {
@@ -59,9 +59,9 @@ body {
     text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
 }
 /*   */
-.card {
+.card-index {
     background: none;
-    box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1);
+    /* box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1); */
     text-align: center;
     align-items: center;
     margin: 2rem auto;
@@ -74,15 +74,4 @@ body {
 .card-title {
     font-size: 2rem;
 }
-@media (max-width: 768px) {
-    .contenedor {
-        background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .contenedor-carousel {
-        margin: 12% auto;        
-    }
-    .carousel-inner {
-        border-radius: 0;
-        box-shadow: 0 0 5px rgba(0,0,0,.8);
-    }
-}
+
