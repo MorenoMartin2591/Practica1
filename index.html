@@ -11,72 +11,75 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/logo-pagina-video1.png" type="image/x-icon">
 </head>
 
 <body>
-  <main class="contenedor">
+  <main class="container-fluid">
     <div class="col-lg-12">
-      <nav class="navbar navbar-expand-sm fixed-top navbar-dark navcolor">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <!-- <i class="bi bi-film"></i> -->
-            <img src="./img/logo-pagina-video1.png" alt="" />
+      <header class="row justify-content-center">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark navcolor w-100">
+          <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+              <!-- <i class="bi bi-film"></i> -->
+              <img id="img-logo" src="./img/logo-pagina-video1.png" alt="" />
 
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-            aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav me-4" height: auto;>
-              <li class="navbar-item">
-                <a class="nav-link active" href="#">Inicio</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#">Estrenos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Categorías
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Acción</a></li>
-                  <li><a class="dropdown-item" href="#">Aventura</a></li>
-                  <li><a class="dropdown-item" href="#">Comedia</a></li>
-                  <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
-                  <li><a class="dropdown-item" href="#">Drama</a></li>
-                  <li><a class="dropdown-item" href="#">Familia</a></li>
-                  <li><a class="dropdown-item" href="#">Misterio</a></li>
-                </ul>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-              <li class="navbar-item">
-                <a class="nav-link" href="#">Acerca de</a>
-              </li>
-            </ul>
-            <hr class="text-white" />
-            <form class="col-xl-3 col-sm-6 d-flex justify-content-lg-center" role="search">
-              <input class="form-control iBuscar" type="search" placeholder="Buscar" aria-label="Buscar" />
-              <button class="btn btn-outline-light botonB" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
-            <hr class="text-white" />
-            <form class="d-flex justify-content-end justify-content-sm-start ms-lg-2">
-              <button class="btn btn-light me-2 boton" type="button">
-                Login
-              </button>
-              <button class="btn btn-outline-warning boton" type="button">
-                Suscribirse
-              </button>
-            </form>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="navbar-item">
+                  <a class="nav-link active" href="./index.html">Inicio</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#estrenos">Estrenos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Aventura</a></li>
+                    <li><a class="dropdown-item" href="#">Comedia</a></li>
+                    <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                    <li><a class="dropdown-item" href="#infantiles">Kids</a></li>
+                    <li><a class="dropdown-item" href="#">Misterio</a></li>
+                  </ul>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="./about.html">Contacto</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="./about.html">Acerca de</a>
+                </li>
+              </ul>
+              <hr class="text-white" />
+              <form class="col-xl-3 col-sm-6 d-flex justify-content-lg-center" role="search">
+                <input class="form-control iBuscar" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-outline-light botonB" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <hr class="text-white" />
+              <form class="d-flex justify-content-end justify-content-sm-start ms-lg-2">
+                <a href="./formulario.html"><button class="btn btn-light me-2 boton" type="button">
+                    Login
+                  </button></a>
+                <a href="./formulario.html"><button class="btn btn-outline-warning boton" type="button">
+                    Suscribirse
+                  </button></a>
+              </form>
+            </div>
           </div>
-        </div>
-      </nav>
-      <div class="col-sm-12 row contenedor-carousel 100vh">
+        </nav>
+      </header>
+      <div class="contenedor-carousel">
         <div id="mi-carousel" class="col-sm-12 col-md-9 col-lg-6 carousel slide carrusel" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -121,29 +124,32 @@
           </button>
         </div>
       </div>
-      
+
     </div>
   </main>
   <section class="container-fluid">
+    <div class="b-example-divider">
+      <h1 class="display-4 fw-normal text-center text-warning"><u>Mas Populares</u></h1>
+    </div>
     <div class="row">
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
-          <img class="bd-placeholder-img card-img-top" src="/img/bds-Thor-poster-final.jpg"
-            alt="Poster Thor" name="Poster Thor" />
+          <img class="bd-placeholder-img card-img-top" src="/img/bds-Thor-poster-final.jpg" alt="Poster Thor"
+            name="Poster Thor" />
           <div class="card-body bg-secondary">
             <p class="card-text text-white">
               Tras desatar una antigua guerra, el codicioso guerrero Thor es
               desterrado a la Tierra por su padre para que viva entre los
-              hombres y descubra así el ver Onlinedadero sentido de la
+              hombres y descubra así el ver verdadero sentido de la
               humildad. Allí, sin sus poderes, Thor deberá enfrentarse a las
               fuerzas más oscuras que su mayor enemigo le enviará desde
               Asgard.
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -155,24 +161,24 @@
       </div>
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
-          <img class="bd-placeholder-img card-img-top" src="/img/Avatar2.jpg" alt="Poster Avatar 2" />
+          <img class="bd-placeholder-img card-img-top" src="/img/elseñordelosanillos.jpg"
+            alt="Poster El Señor de los Anillos La Comunidad del Anillo" />
           <div class="card-body">
             <p class="card-text text-white">
-              Jake Sully y Ney'tiri han formado una familia y hacen todo lo
-              posible por permanecer juntos. Sin embargo, deben abandonar su
-              hogar y explorar las regiones de Pandora cuando una antigua
-              amenaza reaparece.
+              Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único, capaz de otorgar un
+              poder ilimitado al que la posea, con la finalidad de destruirlo. Sin embargo, fuerzas malignas muy
+              poderosas quieren arrebatárselo.
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
               </div>
-              <small class="text-dark">3h 10m</small>
+              <small class="text-dark">1h 55m</small>
             </div>
           </div>
         </div>
@@ -191,9 +197,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -214,9 +220,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -228,6 +234,9 @@
       </div>
     </div>
     <div class="row">
+      <div class="b-example-divider">
+        <h1 class="display-4 fw-normal text-center text-warning" id="estrenos"><u>Ultimos Estrenos</u></h1>
+      </div>
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
           <img class="bd-placeholder-img card-img-top" src="/img/avenger3.jpg" alt="Poster Avenger 3" />
@@ -239,9 +248,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -263,9 +272,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -286,9 +295,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -300,30 +309,32 @@
       </div>
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
-          <img class="bd-placeholder-img card-img-top" src="/img/smilemovie.jpg" alt="Poster Smile" />
+          <img class="bd-placeholder-img card-img-top" src="/img/Avatar2.jpg" alt="Poster Avatar 2" />
           <div class="card-body">
             <p class="card-text text-white">
-              Tras presenciar el dramático incidente sufrido por un paciente,
-              la Dra. Cotter empieza a experimentar hechos aterradores sin
-              explicación aparente. A medida que el horror se adueña de su
-              vida, comprende que la respuesta está en su propio pasado.
+              Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo,
+              deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece.
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
               </div>
-              <small class="text-dark">1h 55m</small>
+              <span class="duracion">3h 10m
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
+      <div class="b-example-divider">
+        <h1 class="display-4 fw-normal text-center text-warning" id="infantiles"><u>Kids</u></h1>
+      </div>
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
           <img class="bd-placeholder-img card-img-top" src="/img/kungfupanda.jpg" alt="Poster Kung-fu Panda" />
@@ -337,9 +348,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -361,9 +372,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -384,9 +395,9 @@
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
-                </button>
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -398,16 +409,118 @@
       </div>
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
-          <img class="bd-placeholder-img card-img-top" src="/img/elseñordelosanillos.jpg" alt="Poster El Señor de los Anillos La Comunidad del Anillo" />
-          <div class="card-body">
+          <img class="bd-placeholder-img card-img-top" src="/img/cars.jpg" alt="Poster Cars" />
+          <div class="card-body bg-secondary">
             <p class="card-text text-white">
-              Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único, capaz de otorgar un poder ilimitado al que la posea, con la finalidad de destruirlo. Sin embargo, fuerzas malignas muy poderosas quieren arrebatárselo.
+              De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar
+              aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo
+              largo de la histórica Ruta 66.
             </p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-md btn btn-success">
-                  Ver Online
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
                 </button>
+              </div>
+              <small class="text-dark">1h 54m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="b-example-divider">
+        <h1 class="display-4 fw-normal text-center text-warning"><u>Ultimos Estrenos</u></h1>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
+          <img class="bd-placeholder-img card-img-top" src="/img/avenger3.jpg" alt="Poster Avenger 3" />
+          <div class="card-body">
+            <p class="card-text text-white">
+              Los Vengadores restantes deben encontrar una manera de recuperar
+              a sus aliados para un enfrentamiento épico con Thanos, el
+              malvado que diezmó el planeta y el univer Onlineso.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">3h 2m </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
+          <img class="bd-placeholder-img card-img-top" src="/img/conjuro3.jpg" alt="Poster Conjuro 3" />
+          <div class="card-body">
+            <p class="card-text text-white">
+              Los investigadores de fenómenos paranormales Ed y Lorraine
+              Warren se enfrentan a un nuevo caso: el de un hombre acusado de
+              un terrible asesinato, que asegura haber sido poseído por un
+              demonio.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 52m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
+          <img class="bd-placeholder-img card-img-top" src="/img/lacasadepapel.jpg" alt=" Poster La Casa de Papel" />
+          <div class="card-body">
+            <p class="card-text text-white">
+              Una banda organizada de ladrones se propone cometer el atraco del siglo en la Fábrica Nacional de Moneda y
+              Timbre. Cinco meses de preparación quedarán reducidos a once días para poder llevar a cabo con éxito el
+              gran golpe.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 55m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card shadow-sm bg-secondary" style="width: 4; height: auto;">
+          <img class="bd-placeholder-img card-img-top" src="/img/smilemovie.jpg" alt="Poster Smile" />
+          <div class="card-body">
+            <p class="card-text text-white">
+              Tras presenciar el dramático incidente sufrido por un paciente,
+              la Dra. Cotter empieza a experimentar hechos aterradores sin
+              explicación aparente. A medida que el horror se adueña de su
+              vida, comprende que la respuesta está en su propio pasado.
+            </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
                 <button type="button" class="btn btn-md btn btn-warning">
                   Trailer
                 </button>
@@ -418,10 +531,9 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
   <section class="conteiner-fluid">
-    <div class="pricing-header p-3 pb-md-4 mx-4  height: auto;text-center">
+    <div class="pricing-header p-3 pb-md-4 mx-4  height: auto text-center">
       <h1 class="display-4 fw-normal text-warning">Nuestros Planes</h1>
       <p class="fs-5 text-white">
         Llego plataforma por excelencia para los amantes del cine y los
@@ -452,7 +564,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
+      <div class="col">
         <div class="card mb-4 shadow-sm border-primary">
           <div class="card-header py-3 text-dark bg-warning border-primary">
             <h4 class="my-0 fw-normal">PREMIUM</h4>
@@ -500,30 +612,19 @@
     <div class="container-fluid">
       <div class="row bg-dark bg-gradient text-white">
         <div class="col-12 col-md-6 col-lg-3 my-auto">
-          <a href="#"
-            ><img
-              src="./img/logo-pagina-video1.png"
-              style="width: 200px"
-              alt=""
-          /></a>
+          <a href="#"><img src="./img/logo-pagina-video1.png" style="width: 200px" alt="" /></a>
           <a href="#"></a>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-3 py-2">
           <p class="h4">Redes sociales</p>
           <div class="mb-2">
-            <a href="#" class="text-white text-decoration-none"
-              ><i class="fa-brands fa-facebook"></i> Facebook</a
-            >
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook"></i> Facebook</a>
           </div>
           <div class="mb-2">
-            <a href="#" class="text-white text-decoration-none"
-              ><i class="fa-brands fa-instagram"></i> Instagram</a
-            >
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i> Instagram</a>
           </div>
           <div class="mb-2">
-            <a href="#" class="text-white text-decoration-none"
-              ><i class="fa-brands fa-twitter"></i> Twitter</a
-            >
+            <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-twitter"></i> Twitter</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-3 py-2">
@@ -535,24 +636,16 @@
             <a href="#" class="text-white text-decoration-none">Misión</a>
           </div>
           <div class="mb-2">
-            <a href="./about.html" class="text-white text-decoration-none"
-              >Integrantes</a
-            >
+            <a href="./about.html" class="text-white text-decoration-none">Integrantes</a>
           </div>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-3 py-2">
           <p class="h4">Contacto</p>
           <div class="mb-2">
-            <a
-              href="./formulario.html"
-              class="text-white text-decoration-none"
-              >Formulario de contacto</a
-            >
+            <a href="./formulario.html" class="text-white text-decoration-none">Formulario de contacto</a>
           </div>
           <div class="mb-2">
-            <a href="#" class="text-white text-decoration-none"
-              >Politicas de la empresa</a
-            >
+            <a href="#" class="text-white text-decoration-none">Politicas de la empresa</a>
           </div>
           <div class="mb-2">
             <a href="#" class="text-white text-decoration-none">Anuncios</a>

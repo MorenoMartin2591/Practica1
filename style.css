@@ -3,10 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "titulos";
+  src: url(./Fuentes-colores/Rye-Regular.ttf);
+}
+
+@font-face {
+  font-family: "navbar";
+  src: url(./Fuentes-colores/Shojumaru-Regular.ttf);
+}
+
+@font-face {
+  font-family: "subtitulo";
+  src: url(./Fuentes-colores/RubikGlitch-Regular.ttf);
+}
+
+@font-face {
+  font-family: "text-body";
+  src: url(./Fuentes-colores/PermanentMarker-Regular.ttf);
+}
 
 body {
   background-image: url(./img/body-img2.png);
-  height: 100vh;
   background-size: cover;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -14,19 +32,10 @@ body {
   background-attachment: fixed;
 }
 .navcolor {
-  background: #0f2027; /* fllback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #076df2,
-    #034aa6,
-    #021f59
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #076df2,
-    #034aa6,
-    #021f59
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0f2027;
+  background: -webkit-linear-gradient(to bottom, #076df2, #034aa6, #021f59);
+  background: linear-gradient(to bottom, #076df2, #034aa6, #021f59);
+  font-family: "navbar";
 }
 .navbar-brand img {
   width: 100px;
@@ -45,12 +54,10 @@ body {
   justify-content: space-around;
   align-content: space-around;
   height: 70%;
-  padding-top: 8rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
-img {
-  border-radius: 3rem;
-}
 .carousel-caption {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -59,7 +66,8 @@ img {
 }
 
 section {
-  padding-top: 10rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
 }
 
 img:hover {
@@ -67,32 +75,21 @@ img:hover {
   transition-duration: 1s;
 }
 
+/*reproduccion es una class de peli-serie.html*/
+.box-reproduccion {
+  display: flex;
+}
 .reproduccion {
   display: flex;
-  justify-content: center;
+  align-self: center;
   margin-top: 8rem;
   margin-left: 10rem;
 }
-body {
-  background: #034aa6;
-}
-
 .navcolor {
   font-family: "Oswald";
-  background: #0f2027; /* fllback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #076df2,
-    #034aa6,
-    #021f59
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #076df2,
-    #034aa6,
-    #021f59
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* position: fixed; */
+  background: #0f2027;
+  background: -webkit-linear-gradient(to bottom, #076df2, #034aa6, #021f59);
+  background: linear-gradient(to bottom, #076df2, #034aa6, #021f59);
   z-index: 2;
 }
 .navbar-brand img {
@@ -107,42 +104,7 @@ body {
 .boton {
   border-radius: 25px;
 }
-/* .contenedor-carousel {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    height: 100%; 
-    margin: 7% auto;
-    
-} 
-.contenedor {
-  background-image: url(./img/body-img2.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  height: 100vh;}*/
 
-.carousel-inner {
-  border-radius: 4px;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  color: #fff;
-}
-.seccion-planes {
-  margin: 7% auto 10%;
-  width: 100vw;
-  height: 100vh;
-}
-.title2 {
-  font-size: 3rem;
-  font-family: "Rye";
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
-}
-/*   */
 .card-index {
   background: none;
   /* box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1); */
@@ -150,10 +112,39 @@ body {
   align-items: center;
   margin: 2rem auto;
 }
+
 .imangen-card {
   width: 50%;
   padding: 1rem 0 1rem 0;
 }
 .card-title {
   font-size: 2rem;
+}
+
+.b-example-divider {
+  border-radius: 50%;
+  height: 5rem;
+  background-color: rgba(234, 232, 242, 0.2);
+  border: solid rgba(97, 92, 92, 0.313);
+  border-width: 2px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(16, 16, 182, 0.607),
+    inset 0 0.125em 0.5em rgba(5, 35, 230, 0.532);
+}
+
+#menu {
+  font-family: "navbar";
+}
+
+@media (max-width: 1290px) {
+  body {
+    background-image: url(./img/body-img.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.duracion {
+  font-size: 30px;
+  font-family: "text-body";
+  color: #fff;
 }

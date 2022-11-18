@@ -7,7 +7,6 @@
   font-family: "navbar";
   src: url(./Fuentes-colores/Shojumaru-Regular.ttf);
 }
-
 @font-face {
   font-family: "subtitulo";
   src: url(./Fuentes-colores/RubikGlitch-Regular.ttf);
@@ -17,6 +16,7 @@
   font-family: "text-body";
   src: url(./Fuentes-colores/PermanentMarker-Regular.ttf);
 }
+
 body {
   background-image: url("./img/body-form-2.jpg");
   background-repeat: no-repeat;
@@ -25,7 +25,6 @@ body {
 }
 .navcolor {
   font-family: "navbar";
-  font-size: small;
 }
 .navbar-brand img {
   width: 100px;
@@ -43,14 +42,15 @@ body {
   width: 60%;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-  border-radius: 5px;
+  border-radius: 5rem;
   margin: 2% auto;
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
 }
 .title3 {
+  font-size: 3rem;
   font-family: "subtitulo";
   color: #f24738;
 }
@@ -58,14 +58,14 @@ body {
   font-family: "text-body";
   color: white;
 }
-.form-check-label {
-  font-family: "Roboto", "Helvetica Neue", Arial;
-}
 .form-control {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .btn-lg {
   border-radius: 25px;
+}
+.botones {
+  font-family: "text-body";
 }
 @media (max-width: 1024px) {
   body {

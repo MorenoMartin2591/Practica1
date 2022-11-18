@@ -1,14 +1,13 @@
 body {
-    background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59);
-  
+  background: linear-gradient(to bottom, #076df2, #034aa6, #021f59);
 }
 .imagen {
-    margin: 0 auto;
-    padding: 3em;
+  margin: 0 auto;
+  padding: 3em;
 }
 .title5 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .btn-lg {
-    border-radius: 25px;
+  border-radius: 25px;
 }
