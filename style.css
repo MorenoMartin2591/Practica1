@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background: #034AA6;
 }
 .contenedor {
     background-image: url(./img/body-img2.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center center;
     height: 100vh;
     
@@ -67,11 +72,28 @@ body {
     margin: 2rem auto;
     
 }
-.imangen-card {
+/* .imangen-card {
     width: 50%;
     padding: 1rem 0 1rem 0;
-}
+} */
 .card-title {
     font-size: 2rem;
+}
+.contenedor-trailer {
+    margin-top: 10%;
+}
+@media (max-width: 768px) {
+    body {
+        background-image: url(./img/body-img2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .contenedor {
+        background: none;
+            
+    }
 }
 
