@@ -51,7 +51,7 @@
                   <a class="nav-link active" href="#">Inicio</a>
                 </li>
                 <li class="navbar-item">
-                  <a class="nav-link" href="#">Estrenos</a>
+                  <a class="nav-link" href="#estrenos">Estrenos</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -105,9 +105,13 @@
                 <button class="btn btn-light me-2 boton" type="button">
                   Login
                 </button>
-                <button class="btn btn-outline-warning boton" type="button">
+                <a
+                  href="#nuestrosPlanes"
+                  class="btn btn-outline-warning boton"
+                  type="button"
+                >
                   Suscribirse
-                </button>
+                </a>
               </form>
             </div>
           </div>
@@ -204,6 +208,15 @@
         </div>
       </div>
       <section class="contenedor-trailer container py-5">
+        <div class="row">
+          <div class="container py-2 text-warning">
+            <div class="col-12">
+              <h3 class="title-estrenos" id="estrenos">
+                Películas y series estreno
+              </h3>
+            </div>
+          </div>
+        </div>
         <div class="row mb-3">
           <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8 d-flex mb-3">
             <div
@@ -212,18 +225,18 @@
             >
               <img
                 class="bd-placeholder-img card-img-top"
-                src="/img/bds-Thor-poster-final.jpg"
+                src="/img/thor4.jpg"
                 alt="Poster Thor"
                 name="Poster Thor"
               />
               <div class="card-body bg-secondary">
                 <p class="card-text text-white">
-                  Tras desatar una antigua guerra, el codicioso guerrero Thor es
-                  desterrado a la Tierra por su padre para que viva entre los
-                  hombres y descubra así el ver Onlinedadero sentido de la
-                  humildad. Allí, sin sus poderes, Thor deberá enfrentarse a las
-                  fuerzas más oscuras que su mayor enemigo le enviará desde
-                  Asgard.
+                  El Dios del Trueno emprende un viaje en búsqueda de la paz
+                  interior. Pero el retiro de Thor se ve interrumpido por un
+                  asesino galáctico conocido como Gorr el Carnicero de Dioses.
+                  Frente a la amenaza, Thor solicita la ayuda de Valkiria, de
+                  Korg y de su ex novia Jane Foster que, para sorpresa de Thor,
+                  empuña su martillo mágico, Mjolnir, como la Poderosa Thor.
                 </p>
               </div>
               <div class="card-footer">
@@ -232,9 +245,58 @@
                     <button type="button" class="btn btn-md btn btn-success">
                       Ver Online
                     </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+
+                    <a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    loop
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <small class="text-dark">1h 54m</small>
                 </div>
@@ -281,7 +343,7 @@
             >
               <img
                 class="bd-placeholder-img card-img-top"
-                src="/img/iron-man-3-poster-1551693244.jpg"
+                src="/img/ironman-3-poster.jpg"
                 alt="Poster Iron-man 3"
               />
               <div class="card-body">
@@ -414,7 +476,7 @@
             >
               <img
                 class="bd-placeholder-img card-img-top"
-                src="/img/lacasadepapel.jpg"
+                src="/img/la-casa-papel.jpg"
                 alt=" Poster La Casa de Papel"
               />
               <div class="card-body">
@@ -516,7 +578,7 @@
             >
               <img
                 class="bd-placeholder-img card-img-top"
-                src="/img/Lightyear.jpg"
+                src="/img/light-year.jpg"
                 alt="Poster Lightyear"
               />
               <div class="card-body">
@@ -611,7 +673,9 @@
       </section>
       <section class="container">
         <div class="pricing-header p-3 pb-md-4 mx-4">
-          <h1 class="display-4 fw-normal text-warning">Nuestros Planes</h1>
+          <h1 class="display-4 fw-normal text-warning" id="nuestrosPlanes">
+            Nuestros Planes
+          </h1>
           <p class="fs-5 text-white">
             Llego plataforma por excelencia para los amantes del cine y los
             maratonistas del sillon, contamos con opciones cortometrajes,
@@ -637,12 +701,13 @@
                 </ul>
               </div>
               <div class="card-footer">
-                <button
+                <a
+                  href="./pageNotFound.html"
                   type="button"
                   class="w-100 btn btn-md btn-outline-danger"
                 >
                   Suscribirme
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -766,6 +831,10 @@
         </div>
       </footer>
     </div>
-    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

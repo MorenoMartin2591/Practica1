@@ -35,6 +35,8 @@ body {
 .boton {
     border-radius: 25px;
 }
+
+/* ----Seccion carousel------ */
 /* .contenedor-carousel {
     display: flex;
     justify-content: space-around;
@@ -53,6 +55,15 @@ body {
     backdrop-filter: blur(10px);
     color: #fff;
 }
+
+/* -----Seccion estrenos----- */
+
+.title-estrenos {
+    font-size: 51px;
+}
+
+
+/* -----Seccion planes----- */
 .seccion-planes {
     margin: 7% auto 10%;
     width: 100vw;
@@ -81,6 +92,16 @@ body {
 }
 .contenedor-trailer {
     margin-top: 10%;
+}
+
+
+.listaTemporada {
+    border-radius: 4px;
+}
+.ul-listaSerie a {
+    text-decoration: none;
+    font-size: 1.12em;
+    color: #aaa;
 }
 @media (max-width: 768px) {
     body {

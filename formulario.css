@@ -20,16 +20,11 @@ body {
 .boton {
     border-radius: 25px;
 }
-.container {
-    width: 60%;
+.seccion-direccion {
     background: rgba(0,0,0,.6);
     backdrop-filter: blur(10px);
     border-radius: 5px;
-    margin: 2% auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 3rem;
+   
 }
 .title3 {
     font-size: 2rem;
