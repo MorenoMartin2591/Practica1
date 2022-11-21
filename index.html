@@ -27,6 +27,7 @@
   </head>
   <body>
     <div class="col-12 contenedor">
+      <!-- Encabezado de página: Navbar -->
       <header class="row justify-content-center">
         <nav class="navbar navbar-expand-md navbar-dark navcolor w-100">
           <div class="container-fluid">
@@ -102,9 +103,53 @@
               <form
                 class="d-flex justify-content-end justify-content-sm-start ms-lg-2"
               >
-                <button class="btn btn-light me-2 boton" type="button">
+                <button
+                  class="btn btn-light me-2 boton"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ventana-login"
+                >
                   Login
                 </button>
+                <div class="modal fade" id="ventana-login">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="modal-title">
+                          <h5>Registrarse</h5>
+                        </div>
+                        <button
+                          class="btn btn-secondary"
+                          type="button"
+                          data-bs-dismiss="modal"
+                        >
+                          &times
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Modi, reiciendis
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <a
+                          href="./pageNotFound.html"
+                          class="btn btn-primary"
+                          type="button"
+                          >Login</a
+                        >
+                        <button
+                          class="btn btn-secondary"
+                          type="button"
+                          data-bs-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <a
                   href="#nuestrosPlanes"
                   class="btn btn-outline-warning boton"
@@ -117,6 +162,7 @@
           </div>
         </nav>
       </header>
+      <!-- Carousel -->
       <div class="row justify-content-center align-items-center py-5 mb-5">
         <div class="col-12 col-md-6">
           <div id="mi-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -207,6 +253,7 @@
           </div>
         </div>
       </div>
+      <!-- Sección de películas y series -->
       <section class="contenedor-trailer container py-5">
         <div class="row">
           <div class="container py-2 text-warning">
@@ -671,6 +718,7 @@
           </div>
         </div>
       </section>
+      <!-- Sección de planes y subscripciónes -->
       <section class="container">
         <div class="pricing-header p-3 pb-md-4 mx-4">
           <h1 class="display-4 fw-normal text-warning" id="nuestrosPlanes">
@@ -765,6 +813,7 @@
           </div>
         </div>
       </section>
+      <!-- Sección pie de página -->
       <footer>
         <div class="container-fluid">
           <div class="row bg-dark bg-gradient text-white">
@@ -798,10 +847,94 @@
             <div class="col-xs-12 col-md-6 col-lg-3 py-2">
               <p class="h4">Acerca de</p>
               <div class="mb-2">
-                <a href="#" class="text-white text-decoration-none">Visión</a>
+                <a
+                  href="#ventana-vision"
+                  class="text-white text-decoration-none"
+                  data-bs-toggle="modal"
+                  >Visión</a
+                >
+                <div class="modal fade" id="ventana-vision">
+                  <div class="modal-dialog text-dark">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="modal-title">
+                          <h5>Visión</h5>
+                        </div>
+                        <button
+                          type="button"
+                          class="close btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          &times
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="modal-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ipsa voluptatum debitis nesciunt, unde quidem
+                          modi corrupti pariatur numquam nostrum praesentium
+                          dicta animi cupiditate. Ratione exercitationem omnis
+                          alias dignissimos repellat corporis architecto laborum
+                          ipsum repellendus in. Porro odio corporis itaque
+                          debitis.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="mb-2">
-                <a href="#" class="text-white text-decoration-none">Misión</a>
+                <a
+                  href="#ventana-mision"
+                  class="text-white text-decoration-none"
+                  data-bs-toggle="modal"
+                  >Misión</a
+                >
+                <div class="modal fade" id="ventana-mision">
+                  <div class="modal-dialog text-dark">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="modal-title">
+                          <h5>Misión</h5>
+                        </div>
+                        <button
+                          type="button"
+                          class="close btn btn-warning"
+                          data-bs-dismiss="modal"
+                        >
+                          &times
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p class="modal-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Repellat, temporibus. Hic placeat consequuntur
+                          eum, debitis earum in, accusamus nesciunt officiis
+                          autem ducimus dolores, delectus amet molestias maxime
+                          incidunt! Voluptate, quo!
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          class="btn btn-primary"
+                          type="button"
+                          data-bs-dismiss="modal"
+                        >
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="mb-2">
                 <a href="./about.html" class="text-white text-decoration-none"
