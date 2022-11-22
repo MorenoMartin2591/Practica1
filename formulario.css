@@ -1,53 +1,56 @@
 body {
-    background-image: url('./img/fondo-cine2.png');
-    background-repeat: no-repeat;
-    background-size: 100vw;
+  background-image: url("./img/fondo-cine2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-attachment: fixed;
 }
 .navcolor {
-    font-family: 'Oswald';
-
+  font-family: "Oswald";
 }
 .navbar-brand img {
-    width: 100px;
+  width: 100px;
 }
 .iBuscar {
-    border-radius: 25px 0 0 25px;
-    
+  border-radius: 25px 0 0 25px;
 }
 .botonC {
-    border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
 }
 .boton {
-    border-radius: 25px;
+  border-radius: 25px;
 }
 .seccion-direccion {
-    background: rgba(0,0,0,.6);
-    backdrop-filter: blur(10px);
-    border-radius: 5px;
-   
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
 }
 .title3 {
-    font-size: 2rem;
-    font-family: 'Montserrat';
-    color: #F24738;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  color: #f24738;
 }
 .form-label {
-    font-family: 'Roboto', "Helvetica Neue", Arial;
-    color: white;
+  font-family: "Roboto", "Helvetica Neue", Arial;
+  color: white;
 }
 .form-check-label {
-    font-family: 'Roboto', "Helvetica Neue", Arial;
+  font-family: "Roboto", "Helvetica Neue", Arial;
 }
 .form-control {
-    background-color: rgba(0,0,0,.8)
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .btn-lg {
-    border-radius: 25px;
+  border-radius: 25px;
 }
-@media (max-width: 1024px) {
-    body {
-        background: #333333;  /* fallback for old browsers */
-        background: linear-gradient(to top, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
+@media (max-width: 1290px) {
+  body {
+    background-image: url(./img/fondo-cine2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+  }
 }

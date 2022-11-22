@@ -1,112 +1,126 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    background: #034AA6;
+  background-image: url(./img/body-img2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-attachment: fixed;
+  /*background: #034aa6;*/
 }
-.contenedor {
-    background-image: url(./img/body-img2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    
-}
+
 /* Barra de navegación */
 .navcolor {
-    font-family: 'Oswald';
-    background: #0F2027;  /* fllback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #076DF2, #034AA6, #021F59);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #076DF2, #034AA6, #021F59); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* position: fixed; */
-    z-index: 2;
+  font-family: "Oswald";
+  background: #0f2027; /* fllback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* position: fixed; */
+  z-index: 2;
 }
 .navbar-brand img {
-    width: 100px;
+  width: 100px;
 }
 .iBuscar {
-    border-radius: 25px 0 0 25px;
-    
+  border-radius: 25px 0 0 25px;
 }
 .botonB {
-    border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
 }
 .boton {
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 /* ----Seccion carousel------ */
 
 .carousel-inner {
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(255,255,255,.8);
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 .carousel-caption {
-    background: rgba(0,0,0,0.5);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  color: #fff;
 }
 
 /* -----Seccion estrenos----- */
 
 .title-estrenos {
-    font-size: 51px;
+  font-size: 51px;
 }
-
 
 /* -----Seccion planes----- */
 
 .seccion-planes {
-    margin: 7% auto 10%;
-    width: 100vw;
-    height: 100vh;
+  margin: 7% auto 10%;
+  width: 100vw;
+  height: 100vh;
 }
 .title2 {
-    font-size: 3rem;
-    font-family: 'Rye';
-    text-shadow: 1px 1px 10px rgba(0,0,0,0.8);
+  font-size: 3rem;
+  font-family: "Rye";
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 }
 /*   */
 .card-index {
-    background: none;
-    /* box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1); */
-    text-align: center;
-    align-items: center;
-    margin: 2rem auto;
-    
+  background: none;
+  /* box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1); */
+  text-align: center;
+  align-items: center;
+  margin: 2rem auto;
 }
 
 .card-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 .contenedor-trailer {
-    margin-top: 10%;
+  margin-top: 10%;
 }
-
 
 .listaTemporada {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 .ul-listaSerie a {
-    text-decoration: none;
-    font-size: 1.12em;
-    color: #aaa;
+  text-decoration: none;
+  font-size: 1.12em;
+  color: #aaa;
 }
-@media (max-width: 768px) {
-    body {
-        background-image: url(./img/body-img2.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-        height: 100vh;
-    }
-    .contenedor {
-        background: none;
-            
-    }
+@media (max-width: 1290px) {
+  body {
+    background-image: url(./img/body-img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  .contenedor {
+    background: none;
+  }
 }
 
+footer {
+  background-color: -webkit-linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  );
+  background: linear-gradient(to bottom, #076df2, #034aa6, #021f59);
+  z-index: 2;
+}
