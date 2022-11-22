@@ -54,7 +54,7 @@ body {
   justify-content: space-around;
   align-content: space-around;
   height: 70%;
-  margin-top: 2rem;
+  margin-top: 5rem;
   padding-top: 2rem;
 }
 
@@ -122,7 +122,7 @@ img:hover {
 
 .card-text {
   color: #fff;
-  font-family: "text-body";
+  font-family: sans-serif;
   font-size: large;
 }
 
@@ -153,6 +153,7 @@ img:hover {
     background-image: url(./img/body-img.jpg);
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
   }
 }
 
@@ -160,4 +161,30 @@ img:hover {
   font-size: 30px;
   font-family: "text-body";
   color: #fff;
+}
+
+.card-body-price {
+  background-color: -webkit-linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  );
+  background: linear-gradient(to bottom, #076df2, #034aa6, #021f59);
+  z-index: 2;
+}
+
+footer {
+  background-color: -webkit-linear-gradient(
+    to bottom,
+    #076df2,
+    #034aa6,
+    #021f59
+  );
+  background: linear-gradient(to bottom, #076df2, #034aa6, #021f59);
+  z-index: 2;
+}
+
+.cards-integrantes {
+  margin-top: 10rem;
 }

@@ -22,6 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
 }
 .navcolor {
   font-family: "navbar";
@@ -48,7 +49,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
 }
 .title3 {
   font-family: "subtitulo";
@@ -72,5 +73,6 @@ body {
     background-image: url("./img/body-form-2.jpg");
     height: 100vh;
     background-size: cover;
+    background-attachment: fixed;
   }
 }

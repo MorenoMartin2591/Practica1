@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5mentarioCinema</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/logo-pagina-video1.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="container-fluid">
+    <div class="col-lg-12">
+      <header class="row justify-content-center">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark navcolor w-100">
+          <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+              <!-- <i class="bi bi-film"></i> -->
+              <img id="img-logo" src="./img/logo-pagina-video1.png" alt="" />
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="navbar-item">
+                  <a class="nav-link active" href="./index.html">Inicio</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="#estrenos">Estrenos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Aventura</a></li>
+                    <li><a class="dropdown-item" href="#">Comedia</a></li>
+                    <li><a class="dropdown-item" href="#">Ciencia Ficción</a></li>
+                    <li><a class="dropdown-item" href="#">Drama</a></li>
+                    <li><a class="dropdown-item" href="#infantiles">Kids</a></li>
+                    <li><a class="dropdown-item" href="#">Misterio</a></li>
+                  </ul>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="./about.html">Contacto</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="./about.html">Acerca de</a>
+                </li>
+              </ul>
+              <hr class="text-white" />
+              <form class="col-xl-3 col-sm-6 d-flex justify-content-lg-center" role="search">
+                <input class="form-control iBuscar" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-outline-light botonB" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <hr class="text-white" />
+              <form class="d-flex justify-content-end justify-content-sm-start ms-lg-2">
+                <a href="./formulario.html"><button class="btn btn-light me-2 boton" type="button">
+                    Login
+                  </button></a>
+                <a href="./formulario.html"><button class="btn btn-outline-warning boton" type="button">
+                    Suscribirse
+                  </button></a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="contenedor-carousel">
+        <div id="mi-carousel" class="col-sm-12 col-md-9 col-lg-6 carousel slide carrusel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item imagen active">
+              <img src="./img/edit1.jpg" class="d-block w-100 m-4" height: auto; alt="..." />
+
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
+                <p>No importa la cantidad de dispositivos conectados</p>
+              </div>
+            </div>
+            <div class="carousel-item imagen">
+              <img src="./img/edit2.jpg" class="d-block w-100 m-4" height: auto; alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Terror - Crimen - Suspenso - Thriller</h5>
+                <p>Puedes elegir la edad para visualizar el contenido</p>
+              </div>
+            </div>
+            <div class="carousel-item imagen">
+              <img src="./img/estrenos-3.jpg" class="d-block w-100 m-4" height: auto; alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Encontrá los mejores contenidos</h5>
+                <p>
+                  Todas las series y peliculas estrenos los puedes ver Online a
+                  través de 5mentario
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <section class="container-fluid">
+    <div class="b-example-divider">
+      <h1 class="display-4 fw-normal text-center text-warning"><u>Mas Populares</u></h1>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/bds-Thor-poster-final.jpg" alt="Poster Thor"
+            name="Poster Thor" />
+          <div class="card-body">
+            <p class="card-text">
+              Tras desatar una antigua guerra, el codicioso guerrero Thor es
+              desterrado a la Tierra por su padre para que viva entre los
+              hombres y descubra así el ver verdadero sentido de la
+              humildad. Allí, sin sus poderes, Thor deberá enfrentarse a las
+              fuerzas más oscuras que su mayor enemigo le enviará desde
+              Asgard.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Iniciar sesión</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Thor 4.mp4" controls="" loop="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="#" type="button" class="btn btn-secondary">Login</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-dark">1h 54m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/elseñordelosanillos.jpg"
+            alt="Poster El Señor de los Anillos La Comunidad del Anillo" />
+          <div class="card-body">
+            <p class="card-text">
+              Frodo Bolsón es un hobbit al que su tío Bilbo hace portador del poderoso Anillo Único, capaz de otorgar un
+              poder ilimitado al que la posea, con la finalidad de destruirlo. Sin embargo, fuerzas malignas muy
+              poderosas quieren arrebatárselo.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 55m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/iron-man-3-poster-1551693244.jpg"
+            alt="Poster Iron-man 3" />
+          <div class="card-body">
+            <p class="card-text">
+              El descarado y brillante Tony Stark, tras ver Online destruido
+              todo su univer Onlineso personal, debe encontrar y enfrentarse a
+              un enemigo cuyo poder no conoce límites. Este viaje pondrá a
+              prueba su entereza una y otra vez, y le obligará a confiar en su
+              ingenio.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">2h 10m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/cars.jpg" alt="Poster Cars" />
+          <div class="card-body">
+            <p class="card-text">
+              De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar
+              aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo
+              largo de la histórica Ruta 66.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 54m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="b-example-divider">
+        <h1 class="display-4 fw-normal text-center text-warning" id="estrenos"><u>Ultimos Estrenos</u></h1>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/avenger3.jpg" alt="Poster Avenger 3" />
+          <div class="card-body">
+            <p class="card-text">
+              Los Vengadores restantes deben encontrar una manera de recuperar
+              a sus aliados para un enfrentamiento épico con Thanos, el
+              malvado que diezmó el planeta y el univer Onlineso.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">3h 2m </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/conjuro3.jpg" alt="Poster Conjuro 3" />
+          <div class="card-body">
+            <p class="card-text">
+              Los investigadores de fenómenos paranormales Ed y Lorraine
+              Warren se enfrentan a un nuevo caso: el de un hombre acusado de
+              un terrible asesinato, que asegura haber sido poseído por un
+              demonio.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 52m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/lacasadepapel.jpg" alt=" Poster La Casa de Papel" />
+          <div class="card-body">
+            <p class="card-text">
+              Una banda organizada de ladrones se propone cometer el atraco del siglo en la Fábrica Nacional de Moneda y
+              Timbre. Cinco meses de preparación quedarán reducidos a once días para poder llevar a cabo con éxito el
+              gran golpe.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 55m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/Avatar2.jpg" alt="Poster Avatar 2" />
+          <div class="card-body">
+            <p class="card-text">
+              Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo,
+              deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <span class="duracion">3h 10m
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="b-example-divider">
+        <h1 class="display-4 fw-normal text-center text-warning" id="infantiles"><u>Kids</u></h1>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/kungfupanda.jpg" alt="Poster Kung-fu Panda" />
+          <div class="card-body">
+            <p class="card-text">
+              El panda Po trabaja en la tienda de fideos de su familia y sueña
+              en conver Onlinetirse en un maestro del kung-fu. Su sueño se
+              hace una realidad cuando es inesperadamente elegido para cumplir
+              una antigua profecía y debe estudiar artes marciales con sus
+              ídolos, los Cinco Furiosos.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 32m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/Lightyear.jpg" alt="Poster Lightyear" />
+          <div class="card-body">
+            <p class="card-text">
+              Buzz Lightyear se embarca en una aventura intergaláctica con un
+              grupo de reclutas ambiciosos y su compañero robot. Los amigos
+              tendrán que aprender a trabajar juntos para escapar del malvado
+              Zurg y su ejército de robots.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 45m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/liloystich.jpeg" alt="Poster Lilo & Stich" />
+          <div class="card-body">
+            <p class="card-text">
+              Una niña solitaria adopta a un perro que en realidad es un
+              extraterrestre travieso que se esconde de unos cazadores
+              intergalácticos.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 25m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/cars.jpg" alt="Poster Cars" />
+          <div class="card-body">
+            <p class="card-text">
+              De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar
+              aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo
+              largo de la histórica Ruta 66.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 54m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="b-example-divider">
+        <h1 class="display-4 fw-normal text-center text-warning"><u>Ultimos Estrenos</u></h1>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/avenger3.jpg" alt="Poster Avenger 3" />
+          <div class="card-body">
+            <p class="card-text">
+              Los Vengadores restantes deben encontrar una manera de recuperar
+              a sus aliados para un enfrentamiento épico con Thanos, el
+              malvado que diezmó el planeta y el univer Onlineso.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">3h 2m </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/conjuro3.jpg" alt="Poster Conjuro 3" />
+          <div class="card-body">
+            <p class="card-text">
+              Los investigadores de fenómenos paranormales Ed y Lorraine
+              Warren se enfrentan a un nuevo caso: el de un hombre acusado de
+              un terrible asesinato, que asegura haber sido poseído por un
+              demonio.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 52m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/lacasadepapel.jpg" alt=" Poster La Casa de Papel" />
+          <div class="card-body">
+            <p class="card-text">
+              Una banda organizada de ladrones se propone cometer el atraco del siglo en la Fábrica Nacional de Moneda y
+              Timbre. Cinco meses de preparación quedarán reducidos a once días para poder llevar a cabo con éxito el
+              gran golpe.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 55m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/smilemovie.jpg" alt="Poster Smile" />
+          <div class="card-body">
+            <p class="card-text">
+              Tras presenciar el dramático incidente sufrido por un paciente,
+              la Dra. Cotter empieza a experimentar hechos aterradores sin
+              explicación aparente. A medida que el horror se adueña de su
+              vida, comprende que la respuesta está en su propio pasado.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="/peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                    Ver Online
+                  </button></a>
+                <button type="button" class="btn btn-md btn btn-warning">
+                  Trailer
+                </button>
+              </div>
+              <small class="text-dark">1h 55m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="conteiner-fluid">
+    <div class="pricing-header p-3 pb-md-4 mx-4  height: auto text-center">
+      <h1 class="display-4 fw-normal text-warning">Nuestros Planes</h1>
+      <p class="fs-5 text-white">
+        Llego plataforma por excelencia para los amantes del cine y los
+        maratonistas del sillon, contamos con opciones cortometrajes, clásicos
+        y cine independiente. Y todos los estrenos de las mejores Series y
+        Pelis en simultaneo.
+      </p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3">
+          <div class="card-header py-3 bg-danger">
+            <h4 class="my-0 fw-normal text-white">BASIC</h4>
+          </div>
+          <div class="card-body-price">
+            <h1 class="card-title pricing-card-title text-white">
+              $500+IVA<small class="fw-light text-white"><br />/mes</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4 text-white">
+              <li>2 usuarios simultaneos</li>
+              <li>Libre de Anuncios</li>
+              <li>2 GB en Series y Peliculas Sin Conexion</li>
+              <li>Formato de Video <b>480p</b></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-md btn-outline-danger">
+              Suscribirme
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 border-primary">
+          <div class="card-header py-3 text-dark bg-warning border-primary">
+            <h4 class="my-0 fw-large">PREMIUM</h4>
+          </div>
+          <div class="card-body-price">
+            <h1 class="card-title pricing-card-title text-white">
+              $2000+IVA<small class="text-dark fw-light text-white"><br />/mes</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4 text-white">
+              <li>8 usuarios simultaneos</li>
+              <li>Libre de Anuncios</li>
+              <li>20 GB en Series y Peliculas Sin Conexion</li>
+              <li>Formato de Video <b>1080p/4k</b></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-md btn-outline-warning">
+              Suscribirme
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3">
+          <div class="card-header py-3 bg-secondary">
+            <h4 class="my-1 fw-normal text-white">STANDAR</h4>
+          </div>
+          <div class="card-body-price">
+            <h1 class="card-title pricing-card-title text-white">
+              $1000+IVA<small class="text-white fw-light"><br />/mes</small>
+            </h1>
+            <ul class="list-unstyled mt-3 mb-4 text-white">
+              <li>4 usuarios simultaneos</li>
+              <li>Libre de Anuncios</li>
+              <li>4 GB en Series y Peliculas Sin Conexion</li>
+              <li>Formato de Video <b>720p/1080p</b></li>
+            </ul>
+            <button type="button" class="w-100 btn btn-md btn-outline-secondary">
+              Suscribirme
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container-fluid">
+      <div class="row bg-gradient text-white">
+        <div class="col-12 col-md-6 col-lg-3 my-auto">
+          <a href="#"><img src="./img/logo-pagina-video1.png" style="width: 200px" alt="" /></a>
+          <a href="#"></a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+          <p class="h4">Redes sociales</p>
+          <div class="mb-2">
+            <a href="https://es-la.facebook.com" target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          </div>
+          <div class="mb-2">
+            <a href="https://www.instagram.com" target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </div>
+          <div class="mb-2">
+            <a href="https://www.twitter.com"  target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+          <p class="h4">Acerca de</p>
+          <div class="mb-2">
+            <a href="#" class="text-white text-decoration-none">Nuestra Oficina</a>
+          </div>
+          <div class="mb-2">
+            <a href="./about.html" class="text-white text-decoration-none">Integrantes</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+          <p class="h4">Contacto</p>
+          <div class="mb-2">
+            <a href="./formulario.html" class="text-white text-decoration-none">Formulario de contacto</a>
+          </div>
+          <div class="mb-2">
+            <a href="#" class="text-white text-decoration-none">Politicas de la empresa</a>
+          </div>
+          <div class="mb-2">
+            <a href="#" class="text-white text-decoration-none">Anuncios</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
