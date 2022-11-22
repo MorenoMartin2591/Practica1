@@ -105,12 +105,25 @@ img:hover {
   border-radius: 25px;
 }
 
-.card-index {
+.card-movie {
   background: none;
-  /* box-shadow: 1px 5px 20px 5px rgba(0,0,0,.1); */
+  box-shadow: 1px 5px 20px 5px rgba(239, 231, 231, 0.2);
   text-align: center;
   align-items: center;
   margin: 2rem auto;
+  border: #fff 2px solid;
+}
+
+.card-body {
+  background-color: rgba(0, 0, 0, 0.658);
+
+  opacity: 1;
+}
+
+.card-text {
+  color: #fff;
+  font-family: "text-body";
+  font-size: large;
 }
 
 .imangen-card {
