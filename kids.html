@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5mentarioCinema</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/logo-pagina-video1.png" type="image/x-icon">
+</head>
+
+<body>
+  <main class="container-fluid">
+    <div class="col-lg-12">
+      <header class="row justify-content-center">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark navcolor w-100">
+          <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+              <!-- <i class="bi bi-film"></i> -->
+              <img id="img-logo" src="./img/logo-pagina-video1.png" alt="" />
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav me-auto">
+                <li class="navbar-item">
+                  <a class="nav-link active" href="./index.html">Inicio</a>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="index.html">Estrenos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">              
+                    <li><a class="dropdown-item" href="ciencia-ficcion.html">Ciencia Ficción</a></li>
+                    <li><a class="dropdown-item" href="drama-misterio.html">Drama y Misterio</a></li>
+                    <li><a class="dropdown-item" href="kids.html">Kids</a></li>
+                    
+                  </ul>
+                </li>
+                <li class="navbar-item">
+                  <a class="nav-link" href="./series.html">Series</a>
+                </li>            
+              </ul>
+              <hr class="text-white" />
+              <form class="col-xl-3 col-sm-6 d-flex justify-content-lg-center" role="search">
+                <input class="form-control iBuscar" type="search" placeholder="Buscar" aria-label="Buscar" />
+                <button class="btn btn-outline-light botonB" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+              <hr class="text-white" />
+              <form class="d-flex justify-content-end justify-content-sm-start ms-lg-2">
+                <a href="./formulario.html"><button class="btn btn-light me-2 boton" type="button">
+                    Login
+                  </button></a>
+                <a href="./formulario.html"><button class="btn btn-outline-warning boton" type="button">
+                    Suscribirse
+                  </button></a>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="contenedor-carousel">
+        <div id="mi-carousel" class="col-sm-12 col-md-9 col-lg-6 carousel slide carrusel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mi-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item imagen active">
+              <img src="./img/edit1.jpg" class="d-block w-100 m-4" height: auto; alt="..." />
+
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
+                <p>No importa la cantidad de dispositivos conectados</p>
+              </div>
+            </div>
+            <div class="carousel-item imagen">
+              <img src="./img/edit2.jpg" class="d-block w-100 m-4" height: auto; alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Terror - Crimen - Suspenso - Thriller</h5>
+                <p>Puedes elegir la edad para visualizar el contenido</p>
+              </div>
+            </div>
+            <div class="carousel-item imagen">
+              <img src="./img/estrenos-3.jpg" class="d-block w-100 m-4" height: auto; alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Encontrá los mejores contenidos</h5>
+                <p>
+                  Todas las series y peliculas estrenos los puedes ver Online a
+                  través de 5mentario
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <section class="container-fluid">
+    <div class="b-example-divider">
+      <h1 class="display-4 fw-normal text-center text-warning"><u>Mas Populares</u></h1>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/bearbrothers.jpg" alt="Poster Tiera de Osos"
+            name="Poster Thor" />
+          <div class="card-body">
+            <p class="card-text">
+              Un joven que busca vengar la muerte de su hermano se transforma en oso y hace amistad con un cachorro que acaba de perder a su madre.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 25m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/buscando-nemo.jpg"
+            alt="Poster Buscando a Nemo" />
+          <div class="card-body">
+            <p class="card-text">
+              Marlin, un pez payaso, siempre ha intentado proteger de todos los peligros a su hijo. Sin embargo, un buzo atrapa al pequeño, y ahora el padre deberá embarcarse en una increíble aventura por las aguas australianas para encontrarlo.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 44m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/hercules.jpg"
+            alt="Poster Hercules" />
+          <div class="card-body">
+            <p class="card-text">
+              Un legendario hombre, dotado de una fuerza descomunal, combate contra el malvado Hades mientras lucha por tomar su lugar entre los dioses. Fue el propio Hades quien, siendo él niño, lo secuestró de entre los dioses y lo envío al mundo de los mortales, privándole de sus derechos. Ahora que es adolescente, peleará por volver a estar entre los suyos.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 33m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/howtraindragon3.jpeg" alt="Poster Como Entrenar a tu Dragon-3" />
+          <div class="card-body">
+            <p class="card-text">
+              Hipo descubre que Chimuelo no es el único Furia Nocturna y debe buscar el Mundo Oculto, una utopía secreta para descubrir finalmente sus destinos como dragón y jinete.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 44m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="b-example-divider">
+        <br>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/Los_Croods_2.jpg" alt="Poster Croods 2" />
+          <div class="card-body">
+            <p class="card-text">
+              La familia prehistórica de los Crood enfrenta el desafío de una familia rival, los Betterman, quienes afirman estar más evolucionados.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 35m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/MonsterInc.jpg" alt="Monters Inc" />
+          <div class="card-body">
+            <p class="card-text">
+              En sus días universitarios, la feroz rivalidad entre Mike Wazowski y Sulley provoca que ambos sean expulsados del Programa de Sustos de la Universidad de Monstruos.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 44m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/Ralph2.jpg" alt=" Ralph 2" />
+          <div class="card-body">
+            <p class="card-text">
+              Después de 6 años, Ralph y Vanellope se embarcan en una nueva aventura a las profundidades de Internet para encontrar la pieza que necesitan para reparar un videojuego.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 52m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/Sing2.jpg" alt="Poster Sing 2" />
+          <div class="card-body">
+            <p class="card-text">
+              Buster Moon y su elenco de animales artistas se preparan para lanzar un deslumbrante espectáculo escénico en la capital mundial del entretenimiento. Solo hay un problema: debe convencer a la estrella de rock más solitaria del mundo de unirse a ellos.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 50m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="b-example-divider">
+        <br>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/kungfupanda.jpg" alt="Poster Kung-fu Panda" />
+          <div class="card-body">
+            <p class="card-text">
+              El panda Po trabaja en la tienda de fideos de su familia y sueña
+              en conver Onlinetirse en un maestro del kung-fu. Su sueño se
+              hace una realidad cuando es inesperadamente elegido para cumplir
+              una antigua profecía y debe estudiar artes marciales con sus
+              ídolos, los Cinco Furiosos.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 32m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/Lightyear.jpg" alt="Poster Lightyear" />
+          <div class="card-body">
+            <p class="card-text">
+              Buzz Lightyear se embarca en una aventura intergaláctica con un
+              grupo de reclutas ambiciosos y su compañero robot. Los amigos
+              tendrán que aprender a trabajar juntos para escapar del malvado
+              Zurg y su ejército de robots.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 45m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/liloystich.jpeg" alt="Poster Lilo & Stich" />
+          <div class="card-body">
+            <p class="card-text">
+              Una niña solitaria adopta a un perro que en realidad es un
+              extraterrestre travieso que se esconde de unos cazadores
+              intergalácticos.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 25m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/cars.jpg" alt="Poster Cars" />
+          <div class="card-body">
+            <p class="card-text">
+              De camino al prestigiado campeonato Copa Pistón, un automóvil de carreras que sólo se preocupa por ganar
+              aprende sobre lo que realmente es importante en la vida de varios vehículos que viven en un pueblo a lo
+              largo de la histórica Ruta 66.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 54m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="b-example-divider">
+        <hr></hr>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/spirit.jpg" alt="Poster Spirit" />
+          <div class="card-body">
+            <p class="card-text">
+              Un caballo salvaje viaja a través de la frontera americana, hace amistad con un indio lakota y encuentra el amor con una yegua.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 24m</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/Sherk.jpg" alt="Poster Sherk" />
+          <div class="card-body">
+            <p class="card-text">
+              Un ogro llamado Shrek vive en su pantano, pero su preciada soledad se ve súbitamente interrumpida por la invasión de los ruidosos personajes de los cuentos de hadas. Todos fueron expulsados de sus reinos por el malvado Lord Farquaad.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 30m</small>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/phineasyferbs.jpg" alt=" Poster Phineas & Ferbs" />
+          <div class="card-body">
+            <p class="card-text">
+              Luego de que los alienígenas secuestran a Candace, Phineas y Ferb se embarcan en una aventura para rescatarla.
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 25m</small>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+        <div class="card-movie">
+          <img class="bd-placeholder-img card-img-top" src="/img/up.jpg" alt="Poster Up" />
+          <div class="card-body">
+            <p class="card-text">
+              Carl Fredricksen es un vendedor de globos de 78 años de edad dispuesto a cumplir su sueño: atar miles de globos a su casa y volar a Sudamérica. Sin embargo, descubre demasiado tarde a un joven e inesperado polizón. 
+            </p>
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="btn-group">
+                <a href="peli-serie.html"><button type="button" class="btn btn-md btn btn-success">
+                  Ver Online
+                </button></a>
+
+                <a href="#ventana1" type="button" class="btn btn-warning boton" data-bs-toggle="modal">Trailer</a>
+                <div class="modal fade" id="ventana1">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Trailer</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="container-fluid d-flex justify-content-center">
+                            <div class="col-12">
+                              <video class="d-block mx-auto reproduccion" src="./video/Tierra De Osos.mp4" controls="" width="100%"></video>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <a href="peli-serie.html" type="button" class="btn btn-secondary">Ver Ahora</a>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                          Cerrar
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <small class="text-white">1h 36m</small>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container-fluid">
+      <div class="row bg-gradient text-white">
+        <div class="col-12 col-md-6 col-lg-3 my-auto">
+          <a href="#"><img src="./img/logo-pagina-video1.png" style="width: 200px" alt="" /></a>
+          <a href="#"></a>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+          <p class="h4">Redes sociales</p>
+          <div class="mb-2">
+            <a href="https://es-la.facebook.com" target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-facebook"></i> Facebook</a>
+          </div>
+          <div class="mb-2">
+            <a href="https://www.instagram.com" target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </div>
+          <div class="mb-2">
+            <a href="https://www.twitter.com"  target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-twitter"></i> Twitter</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+          <p class="h4">Acerca de</p>
+          <div class="mb-2">
+            <a href="formulario.html" class="text-white text-decoration-none">Nuestra Oficina</a>
+          </div>
+          <div class="mb-2">
+            <a href="./about.html" class="text-white text-decoration-none">Integrantes</a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+          <p class="h4">Contacto</p>
+          <div class="mb-2">
+            <a href="./formulario.html" class="text-white text-decoration-none">Formulario de contacto</a>
+          </div>
+          <div class="mb-2">
+            <a href="#" class="text-white text-decoration-none">Politicas de la empresa</a>
+          </div>
+          <div class="mb-2">
+            <a href="#" class="text-white text-decoration-none">Anuncios</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -65,9 +65,9 @@ body {
   color: #fff;
 }
 
-section {
-  margin-top: 5rem;
-  padding-top: 5rem;
+.carousel {
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
 img:hover {
@@ -75,10 +75,6 @@ img:hover {
   transition-duration: 1s;
 }
 
-/*reproduccion es una class de peli-serie.html*/
-.box-reproduccion {
-  display: flex;
-}
 .reproduccion {
   display: flex;
   align-self: center;

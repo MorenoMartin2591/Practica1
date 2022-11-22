@@ -20,6 +20,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Oswald:wght@200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Rye&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="/img/logo-pagina-video1.png"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/b9fc303ebe.js"
       crossorigin="anonymous"
@@ -51,7 +56,7 @@
             <div class="collapse navbar-collapse" id="menu">
               <ul class="navbar-nav me-auto">
                 <li class="navbar-item">
-                  <a class="nav-link active" href="#">Inicio</a>
+                  <a class="nav-link active" href="index.html">Inicio</a>
                 </li>
                 <li class="navbar-item">
                   <a class="nav-link" href="#estrenos">Estrenos</a>
@@ -68,22 +73,23 @@
                     Categorías
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Acción</a></li>
-                    <li><a class="dropdown-item" href="#">Aventura</a></li>
-                    <li><a class="dropdown-item" href="#">Comedia</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Ciencia Ficción</a>
+                      <a class="dropdown-item" href="ciencia-ficcion.html"
+                        >Ciencia Ficción</a
+                      >
                     </li>
-                    <li><a class="dropdown-item" href="#">Drama</a></li>
-                    <li><a class="dropdown-item" href="#">Familia</a></li>
-                    <li><a class="dropdown-item" href="#">Misterio</a></li>
+                    <li>
+                      <a class="dropdown-item" href="drama-misterio.html"
+                        >Drama y Misterio</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="kids.html">Kids</a>
+                    </li>
                   </ul>
                 </li>
                 <li class="navbar-item">
-                  <a class="nav-link" href="./formulario.html">Contacto</a>
-                </li>
-                <li class="navbar-item">
-                  <a class="nav-link" href="./about.html">Acerca de</a>
+                  <a class="nav-link" href="./series.html">Series</a>
                 </li>
               </ul>
               <hr class="text-white" />
@@ -130,13 +136,13 @@
                       </div>
                       <div class="modal-body">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur, adipisicing
-                          elit. Modi, reiciendis
+                          Para Registrarte solo necesitas un Correo y una
+                          Tarjeta de Credito o Debito
                         </p>
                       </div>
                       <div class="modal-footer">
                         <a
-                          href="./pageNotFound.html"
+                          href="/login.html"
                           class="btn btn-primary"
                           type="button"
                           >Login</a
@@ -153,7 +159,7 @@
                   </div>
                 </div>
                 <a
-                  href="#nuestrosPlanes"
+                  href="/formulario.html"
                   class="btn btn-outline-warning boton"
                   type="button"
                 >
@@ -165,96 +171,104 @@
         </nav>
       </header>
       <!-- Carousel -->
-      <div class="row justify-content-center align-items-center py-5 mb-5">
-        <div class="col-12 col-md-6">
-          <div id="mi-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#mi-carousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#mi-carousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#mi-carousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active imagen">
-                <img
-                  src="./img/edit1.jpg"
-                  class="d-block w-100 m-auto"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
-                  <p>No importa la cantidad de dispositivos conectados</p>
-                </div>
-              </div>
-              <div class="carousel-item imagen">
-                <img
-                  src="./img/edit2.jpg"
-                  class="d-block w-100 m-auto"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Terror - Crimen - Suspenso - Thriller</h5>
-                  <p>Puedes elegir la edad para visualizar el contenido</p>
-                </div>
-              </div>
-              <div class="carousel-item imagen">
-                <img
-                  src="./img/estrenos-3.jpg"
-                  class="d-block w-100 m-auto"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Encontrá los mejores contenidos</h5>
-                  <p>
-                    Todas las series y peliculas estrenos losp uedes ver a
-                    través de 5mentario
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#mi-carousel"
-              data-bs-slide="prev"
+      <section class="carousel">
+        <div class="row justify-content-center align-items-center py-5 mb-5">
+          <div class="col-12 col-md-6">
+            <div
+              id="mi-carousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#mi-carousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#mi-carousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active imagen">
+                  <img
+                    src="./img/edit1.jpg"
+                    class="d-block w-100 m-auto"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>
+                      Suscríbete y obtén un descento del 80% el primer mes
+                    </h5>
+                    <p>No importa la cantidad de dispositivos conectados</p>
+                  </div>
+                </div>
+                <div class="carousel-item imagen">
+                  <img
+                    src="./img/edit2.jpg"
+                    class="d-block w-100 m-auto"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Terror - Crimen - Suspenso - Thriller</h5>
+                    <p>Puedes elegir la edad para visualizar el contenido</p>
+                  </div>
+                </div>
+                <div class="carousel-item imagen">
+                  <img
+                    src="./img/estrenos-3.jpg"
+                    class="d-block w-100 m-auto"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Encontrá los mejores contenidos</h5>
+                    <p>
+                      Todas las series y peliculas estrenos los puedes ver a
+                      través de 5mentario
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Sección de películas y series -->
       <section class="contenedor-trailer container py-5">
         <div class="row">
@@ -291,11 +305,11 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-
-                    <a
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
                       href="#ventana1"
                       type="button"
                       class="btn btn-warning boton"
@@ -324,7 +338,6 @@
                                     class="d-block mx-auto reproduccion"
                                     src="./video/Thor 4.mp4"
                                     controls
-                                    loop
                                     width="100%"
                                   ></video>
                                 </div>
@@ -347,7 +360,7 @@
                       </div>
                     </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">1h 59m</small>
                 </div>
               </div>
             </div>
@@ -373,14 +386,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">3h 10m</small>
                 </div>
               </div>
             </div>
@@ -407,14 +468,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">2h 10m</small>
                 </div>
               </div>
             </div>
@@ -440,14 +549,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">1h 57m</small>
                 </div>
               </div>
             </div>
@@ -467,20 +624,68 @@
                 <p class="card-text text-white">
                   Los Vengadores restantes deben encontrar una manera de
                   recuperar a sus aliados para un enfrentamiento épico con
-                  Thanos, el malvado que diezmó el planeta y el univer Onlineso.
+                  Thanos, el malvado que diezmó el planeta y el universo.
                 </p>
               </div>
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">3h 02m</small>
                 </div>
               </div>
             </div>
@@ -506,14 +711,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">1h 52m</small>
                 </div>
               </div>
             </div>
@@ -539,14 +792,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white"> 5 Temporadas </small>
                 </div>
               </div>
             </div>
@@ -573,14 +874,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">1h 55m</small>
                 </div>
               </div>
             </div>
@@ -608,14 +957,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">1h 32m</small>
                 </div>
               </div>
             </div>
@@ -641,14 +1038,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">1h 45m</small>
                 </div>
               </div>
             </div>
@@ -673,14 +1118,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">1h 25m</small>
                 </div>
               </div>
             </div>
@@ -706,14 +1199,62 @@
               <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-md btn btn-success">
-                      Ver Online
-                    </button>
-                    <button type="button" class="btn btn-md btn btn-warning">
-                      Trailer
-                    </button>
+                    <a href="peli-serie.html"
+                      ><button type="button" class="btn btn-md btn btn-success">
+                        Ver Online
+                      </button></a
+                    ><a
+                      href="#ventana1"
+                      type="button"
+                      class="btn btn-warning boton"
+                      data-bs-toggle="modal"
+                      >Trailer</a
+                    >
+                    <div class="modal fade" id="ventana1">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4 class="modal-title">Iniciar sesión</h4>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-hidden="true"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row">
+                              <div
+                                class="container-fluid d-flex justify-content-center"
+                              >
+                                <div class="col-12">
+                                  <video
+                                    class="d-block mx-auto reproduccion"
+                                    src="./video/Thor 4.mp4"
+                                    controls
+                                    width="100%"
+                                  ></video>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" type="button" class="btn btn-secondary"
+                              >Login</a
+                            >
+                            <button
+                              type="button"
+                              class="btn btn-primary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cerrar
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <small class="text-dark">1h 54m</small>
+                  <small class="text-white">2h 58m</small>
                 </div>
               </div>
             </div>
@@ -763,7 +1304,9 @@
           </div>
           <div class="col-lg-4">
             <div class="card mb-4 shadow-sm border-primary">
-              <div class="card-header py-3 text-dark bg-warning border-primary">
+              <div
+                class="card-header py-3 text-white bg-warning border-primary"
+              >
                 <h4 class="my-0 fw-normal">PREMIUM</h4>
               </div>
               <div class="card-body bg-dark">

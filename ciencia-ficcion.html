@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5mentarioCinema</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/logo-pagina-video1.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <main class="container-fluid">
+      <div class="col-lg-12">
+        <header class="row justify-content-center">
+          <nav
+            class="navbar navbar-expand-md fixed-top navbar-dark navcolor w-100"
+          >
+            <div class="container-fluid">
+              <a href="index.html" class="navbar-brand">
+                <!-- <i class="bi bi-film"></i> -->
+                <img id="img-logo" src="./img/logo-pagina-video1.png" alt="" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                  <li class="navbar-item">
+                    <a class="nav-link active" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a class="nav-link" href="index.html">Estrenos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Categorías
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="ciencia-ficcion.html"
+                          >Ciencia Ficción</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="drama-misterio.html"
+                          >Drama y Misterio</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="kids.html">Kids</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-item">
+                    <a class="nav-link" href="./series.html">Series</a>
+                  </li>
+                </ul>
+                <hr class="text-white" />
+                <form
+                  class="col-xl-3 col-sm-6 d-flex justify-content-lg-center"
+                  role="search"
+                >
+                  <input
+                    class="form-control iBuscar"
+                    type="search"
+                    placeholder="Buscar"
+                    aria-label="Buscar"
+                  />
+                  <button class="btn btn-outline-light botonB" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+                <hr class="text-white" />
+                <form
+                  class="d-flex justify-content-end justify-content-sm-start ms-lg-2"
+                >
+                  <a href="./login.html"
+                    ><button class="btn btn-light me-2 boton" type="button">
+                      Login
+                    </button></a
+                  >
+                  <a href="./formulario.html"
+                    ><button
+                      class="btn btn-outline-warning boton"
+                      type="button"
+                    >
+                      Suscribirse
+                    </button></a
+                  >
+                </form>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class="contenedor-carousel">
+          <div
+            id="mi-carousel"
+            class="col-sm-12 col-md-9 col-lg-6 carousel slide carrusel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#mi-carousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item imagen active">
+                <img src="./img/edit1.jpg" class="d-block w-100 m-4" height:
+                auto; alt="..." />
+
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Suscríbete y obtén un descento del 80% el primer mes</h5>
+                  <p>No importa la cantidad de dispositivos conectados</p>
+                </div>
+              </div>
+              <div class="carousel-item imagen">
+                <img src="./img/edit2.jpg" class="d-block w-100 m-4" height:
+                auto; alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Terror - Crimen - Suspenso - Thriller</h5>
+                  <p>Puedes elegir la edad para visualizar el contenido</p>
+                </div>
+              </div>
+              <div class="carousel-item imagen">
+                <img src="./img/estrenos-3.jpg" class="d-block w-100 m-4"
+                height: auto; alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Encontrá los mejores contenidos</h5>
+                  <p>
+                    Todas las series y peliculas estrenos los puedes ver Online
+                    a través de 5mentario
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#mi-carousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#mi-carousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="container-fluid">
+      <div class="b-example-divider">
+        <h1 class="display-4 fw-normal text-center text-warning">
+          <u>Mas Populares</u>
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/Bumblebee.jpg"
+              alt="Poster Bumblebee"
+              name="Poster Thor"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                En 1987, Charlie, una adolescente, encuentra a Bumblebee, muy
+                herido, en el depósito de chatarra al que había llegado mientras
+                huía. Mientras lo restaura, Charlie percibe que lo que ha
+                hallado no es un Volkswagen amarillo corriente.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">1h 54m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/ReadyplayerOne.jpg"
+              alt="Poster ReadyplayerOne"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Año 2045: el adolescente Wade Watts es solo una de las millones
+                de personas que se evaden del sombrío mundo real para sumergirse
+                en un mundo utópico virtual donde todo es posible: OASIS. Wade
+                participa en la búsqueda del tesoro que el creador de este mundo
+                imaginario dejó oculto en su obra. No obstante, hay gente muy
+                peligrosa compitiendo contra él.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">2h 20m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/JurassicPark.jpg"
+              alt="Poster JurassicPark"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Tres expertos y otras personas son invitados a un parque de
+                diversiones, donde se encuentran dinosaurios creados en base al
+                ADN.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">2h 07m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/Moonfall.jpg"
+              alt="Poster Moonfall"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                El mundo se enfrenta a la posibilidad de la extinción porque una
+                fuerza desconocida empuja a la luna de su órbita rumbo a la
+                Tierra. Un equipo de astronautas asume la misión de evitar el
+                apocalipsis.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">2h 10m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="b-example-divider">
+          <br />
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/Spider_Man_No_Way_Home-642739124-large.jpg"
+              alt="Poster Spider-Man"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Tras descubrirse la identidad secreta de Peter Parker como
+                Spider-Man, la vida del joven se vuelve una locura. Peter le
+                pide ayuda al Doctor Strange para recuperar su vida, pero algo
+                sale mal y provoca una fractura en el multiverso.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">2h 28m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/Matrix.jpg"
+              alt="Matrix"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Un experto en computadoras descubre que su mundo es una
+                simulación total creada con maliciosas intenciones por parte de
+                la ciberinteligencia.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">2h 16m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/Godzilla_vs_Kong.jpg"
+              alt=" Godzilla_vs_Kong"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Godzilla y Kong, dos de las fuerzas más poderosas de un planeta
+                habitado por aterradoras criaturas, se enfrentan en un
+                espectacular combate que sacude los cimientos de la humanidad.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">1h 53m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-8 col-sm-12">
+          <div class="card-movie">
+            <img
+              class="bd-placeholder-img card-img-top"
+              src="/img/Dune.jpg"
+              alt="Poster Dune"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Arrakis, también denominado "Dune", se ha convertido en el
+                planeta más importante del universo. A su alrededor comienza una
+                gigantesca lucha por el poder que culmina en una guerra
+                interestelar.
+              </p>
+              <div class="d-flex justify-content-center align-items-center">
+                <div class="btn-group">
+                  <a href="peli-serie.html"
+                    ><button type="button" class="btn btn-md btn btn-success">
+                      Ver Online
+                    </button></a
+                  >
+
+                  <a
+                    href="#ventana1"
+                    type="button"
+                    class="btn btn-warning boton"
+                    data-bs-toggle="modal"
+                    >Trailer</a
+                  >
+                  <div class="modal fade" id="ventana1">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Trailer</h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-hidden="true"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                            <div
+                              class="container-fluid d-flex justify-content-center"
+                            >
+                              <div class="col-12">
+                                <video
+                                  class="d-block mx-auto reproduccion"
+                                  src="/video/BUMBLEBEE TV SPOT 60 I Paramount Pictures Spai[1].mp4"
+                                  controls=""
+                                  width="100%"
+                                ></video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <a
+                            href="peli-serie.html"
+                            type="button"
+                            class="btn btn-secondary"
+                            >Ver Ahora</a
+                          >
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-dismiss="modal"
+                          >
+                            Cerrar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <small class="text-white">2h 35m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="b-example-divider">
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row bg-gradient text-white">
+          <div class="col-12 col-md-6 col-lg-3 my-auto">
+            <a href="#"
+              ><img
+                src="./img/logo-pagina-video1.png"
+                style="width: 200px"
+                alt=""
+            /></a>
+            <a href="#"></a>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+            <p class="h4">Redes sociales</p>
+            <div class="mb-2">
+              <a
+                href="https://es-la.facebook.com"
+                target="_blank"
+                class="text-white text-decoration-none"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="text-white text-decoration-none"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+              >
+            </div>
+            <div class="mb-2">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="text-white text-decoration-none"
+                ><i class="fa-brands fa-twitter"></i> Twitter</a
+              >
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+            <p class="h4">Acerca de</p>
+            <div class="mb-2">
+              <a href="#" class="text-white text-decoration-none"
+                >Nuestra Oficina</a
+              >
+            </div>
+            <div class="mb-2">
+              <a href="./about.html" class="text-white text-decoration-none"
+                >Integrantes</a
+              >
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-3 py-2">
+            <p class="h4">Contacto</p>
+            <div class="mb-2">
+              <a
+                href="./formulario.html"
+                class="text-white text-decoration-none"
+                >Formulario de contacto</a
+              >
+            </div>
+            <div class="mb-2">
+              <a href="#" class="text-white text-decoration-none"
+                >Politicas de la empresa</a
+              >
+            </div>
+            <div class="mb-2">
+              <a href="#" class="text-white text-decoration-none">Anuncios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
